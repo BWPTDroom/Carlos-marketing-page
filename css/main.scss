@@ -493,7 +493,8 @@ nav ul li a:hover {
     .white-container2  {
 
         ul {
-             margin: 0 90px 20px;
+             margin: 0px 0px 60px;
+             padding: 0 40px;
 
              h2 {
                 padding: 0 10px;
@@ -629,6 +630,7 @@ nav ul li a:hover {
 
         .container {
             width: 100%;
+            
 
             p {
                 width: 100%;
@@ -642,28 +644,34 @@ nav ul li a:hover {
         }
     
         .iphone {
-            margin-right: 15em;
-            margin-left: 12em;
+            margin-right: 9em;
+            margin-left: 8em;
         }   
 
         .android {
-            margin-left: 22em;
-            margin-right: 8em;
+            margin-left: 17em;
+            margin-right: 3em;
         }    
     }
 
-    .cta {
-        padding: 1.1em 6.5em;
-        font-size: 1.7em;
-    }
+
 
     .white-container2  {
 
+        margin: 0px 0px 0px 0;
+        padding: 20px 0px 100px 0px;
+        box-sizing: border-box;
+
         ul {
-             margin: 0 100px 20px;
+            margin: 0px 50px 90px;
+            padding: 0px 60px;
+        }
+
+        .cta {
+            padding: 1.1em 6.5em;
+            font-size: 1.7em;
         }
     }
-
 }
 
 @media only screen and (min-width: 1750px) {
@@ -676,6 +684,30 @@ nav ul li a:hover {
             margin-right: 60px;
         }
     }
+
+    .white-container2  {
+
+        margin: 0px 0px 0px 0;
+        padding: 20px 0px 100px 0px;
+        box-sizing: border-box;
+
+        ul {
+            margin: 0px 150px 90px;
+            padding: 0px 100px;
+        }
+    }
+
+    .white-container{
+    .iphone {
+        margin-right: 15em;
+        margin-left: 5em;
+    }   
+
+    .android {
+        margin-left: 15em;
+        margin-right: 11em;
+    }    
+}
 
 }
 

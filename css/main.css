@@ -458,7 +458,8 @@ nav ul li a:hover {
     padding-right: 100px;
   }
   .white-container2 ul {
-    margin: 0 90px 20px;
+    margin: 0px 0px 60px;
+    padding: 0 40px;
   }
   .white-container2 ul h2 {
     padding: 0 10px;
@@ -592,19 +593,26 @@ nav ul li a:hover {
     margin: 0 120px;
   }
   .white-container .iphone {
-    margin-right: 15em;
-    margin-left: 12em;
+    margin-right: 9em;
+    margin-left: 8em;
   }
   .white-container .android {
-    margin-left: 22em;
-    margin-right: 8em;
+    margin-left: 17em;
+    margin-right: 3em;
   }
-  .cta {
-    padding: 1.1em 6.5em;
-    font-size: 1.7em;
+  .white-container2 {
+    margin: 0px 0px 0px 0;
+    padding: 20px 0px 100px 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .white-container2 ul {
-    margin: 0 100px 20px;
+    margin: 0px 50px 90px;
+    padding: 0px 60px;
+  }
+  .white-container2 .cta {
+    padding: 1.1em 6.5em;
+    font-size: 1.7em;
   }
 }
 
@@ -615,6 +623,24 @@ nav ul li a:hover {
   }
   .meet-team .github-logo {
     margin-right: 60px;
+  }
+  .white-container2 {
+    margin: 0px 0px 0px 0;
+    padding: 20px 0px 100px 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .white-container2 ul {
+    margin: 0px 150px 90px;
+    padding: 0px 100px;
+  }
+  .white-container .iphone {
+    margin-right: 15em;
+    margin-left: 5em;
+  }
+  .white-container .android {
+    margin-left: 15em;
+    margin-right: 11em;
   }
 }
 /*# sourceMappingURL=main.css.map */
