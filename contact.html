@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Droom App</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/index.js">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="img/DROOM.png" alt="Droom Logo" class="logo">
+            </a>    
+                <nav>
+                    <a href="#" class="hide-desktop">
+                        <img src="img/ham.svg" alt="toggle menu" class="menu" id="menu">
+                    </a>
+
+                    <ul class="show-desktop-nav hide-mobile" id="nav">
+                        <li id="exit" class="exit-btn hide-desktop"><img src="img/exit.svg" alt="exit menu"></li>
+                        <li><a class="member" href="#">Member Login</a></li>
+                        <li><a class="signal" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <div class="contact-section">
+            <h1>Meet The Team</h1>
+        </div>
+    </div>
+
+    <div class="white-container2">
+            <div class="container">
+
+
+
+                <div class="meet-team">
+                    <h2>Carlos<br>Banks</h2>
+                    <h3>UI<br>Developer</h3>
+                    <a href="https://github.com/banksenterprises">
+                        <img src="img/github.svg" class="github-logo" alt="GitHub">
+                        </a>
+                </div>
+
+                <div class="meet-team">
+                        <h2>Simone<br>Roy</h2>
+                        <h3>UI<br>Developer</h3>
+                        <a href="https://github.com/simonecarolynr">
+                            <img src="img/github.svg" class="github-logo" alt="GitHub">
+                            </a>
+                    </div>
+
+
+
+                <div class="meet-team">
+                    <h2>Rose<br>Landroche</h2>
+                    <h3>Front End<br>Developer</h3>
+                    <a href="https://github.com/roselandroche">
+                        <img src="img/github.svg" class="github-logo" alt="GitHub">
+                        </a>
+                </div>
+
+                <div class="meet-team">
+                        <h2>Chris<br>Adams</h2>
+                        <h3>Front End<br>Developer</h3>
+                        <a href="https://github.com/cladams0203">
+                        <img src="img/github.svg" class="github-logo" alt="GitHub">
+                        </a>
+                    </div>
+
+                    <div class="meet-team">
+                            <h2>Elvis<br>Gonzalez</h2>
+                            <h3>Back End<br>Developer</h3>
+                            <a href="https://github.com/elvisjg">
+                                <img src="img/github.svg" class="github-logo" alt="GitHub">
+                                </a>
+                        </div>
+
+                <div class="meet-team">
+                    <h2>Andrew<br>Ogle</h2>
+                    <h3>Project<br>Manager</h3>
+                    <a href="https://github.com/andrewogle">
+                        <img src="img/github.svg" class="github-logo" alt="GitHub">
+                        </a>
+                </div>
+
+            </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                    <p class="copyright">Copyright © 2019</p>
+                    <ul class="droom-links">
+                        <li>
+                                <a href="#">DROOM App</a>
+                                <span>|</span>
+                                <a href="#">www.droom.com</a>
+                                <span>|</span>
+                                <a href="#">All Rights Reserved.</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#">Terms of Use</a>
+                            <span>|</span>
+                            <a href="#">Privacy Policy</a>
+                            <span>|</span>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+
+    <script>
+
+            let menu = document.getElementById('menu');
+            let nav = document.getElementById('nav');
+            let exit = document.getElementById('exit');
+    
+            menu.addEventListener('click', function(e) {
+                nav.classList.toggle('hide-mobile');
+                e.preventDefault();
+            });
+    
+            exit.addEventListener('click', function(e) {
+                nav.classList.add('hide-mobile');
+                e.preventDefault();
+            });
+    
+        </script>
+
+</body>
+</html>

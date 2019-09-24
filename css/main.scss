@@ -31,6 +31,8 @@ ul {
 .container {
     text-align: center;
     padding: .8em 1.2em;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -61,6 +63,49 @@ section {
     padding: 20px 0 60px 0;
 }
 
+.contact-section {
+    padding: 50px 0 50px 0;
+
+    h1 {
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+    }    
+
+}
+
+.meet-team {
+    border: 1px solid color(primary-light);
+    border-radius: 20px;
+    margin: 20px 0;
+    background-color: color(accent);
+    text-align: left;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h3 {
+        text-align: center;
+    }
+
+    a {
+        border-radius: 50%;
+    }
+
+    a:hover {
+        box-shadow: 0 0 11px color(primary-dark);
+    }
+
+    .github-logo {
+        height: 50px;
+        width: auto;
+        float: right;
+    }
+}
+
+
+
 h1 {
     font-size: 2.5em;
     text-align: left;
@@ -84,6 +129,7 @@ span {
     background-color: color(off-white);
     border-bottom: 1px solid black;
     padding-bottom: 30px;
+
 
     .white-container::after {
         content: "";
@@ -207,7 +253,21 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 650px) {
 
-
+    .meet-team {
+        height: 250px;
+        width: 130px;
+        margin: 20px 10px;
+        text-align: center;
+        padding: 0 20px;
+        display: inline-block;
+        
+        
+    
+        .github-logo {
+            margin-right: 40px;
+            padding-top: 10px;
+        }
+    }
 
     section {
         padding: 30px 0 90px 0;
@@ -289,6 +349,10 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 875px) {
 
+    .meet-team {
+        margin: 20px 40px;
+    }
+
     .logo {
         margin-left: 50px;
     }
@@ -344,9 +408,24 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 1024px) {
 
+    .meet-team {
+        height: 300px;
+        width: 150px;
+        margin: 20px 10px;
+        padding: 0 30px;
+    
+        .github-logo {
+            margin-right: 50px;
+        }
+    }
+
     .container {
-        width: 80%;
+        width: 75%;
         margin: 0 auto;
+    }
+
+    nav{
+        padding-right:50px;
     }
 
      h1 {
@@ -504,12 +583,30 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 1600px) {
 
+    .meet-team {
+        height: 355px;
+        width: 180px;
+        margin: 20px 40px;
+        padding: 0 30px;
+
+        h3 {
+            font-size: 1.4em;
+            padding-top: 20px;
+        }
+    
+        .github-logo {
+            margin-right: 50px;
+            height: 75px;
+            padding-top: 20px;
+        }
+    }
+
     .container {
-        width: 65%;
+        width: 75%;
     }
 
     nav{
-        padding-right: 110px;
+        padding-right:70px;
         padding-top: 10px;
     }
 
@@ -545,13 +642,13 @@ nav ul li a:hover {
         }
     
         .iphone {
-            margin-right: 20em;
-            margin-left: 5em;
+            margin-right: 15em;
+            margin-left: 12em;
         }   
 
         .android {
-            margin-left: 15em;
-            margin-right: 12em;
+            margin-left: 22em;
+            margin-right: 8em;
         }    
     }
 
@@ -564,6 +661,19 @@ nav ul li a:hover {
 
         ul {
              margin: 0 100px 20px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1750px) {
+
+    .meet-team {
+        width: 200px;
+        margin: 20px 60px;
+    
+        .github-logo {
+            margin-right: 60px;
         }
     }
 
