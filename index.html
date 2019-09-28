@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Droom App</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/index.js">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="img/DROOM.png" alt="Droom Logo" class="logo">
+            </a>    
+
+                <nav>
+                    <a href="#" class="hide-desktop">
+                        <img src="img/ham.svg" alt="toggle menu" class="menu" id="menu">
+                    </a>
+
+                    <ul class="show-desktop-nav hide-mobile" id="nav">
+                        <li id="exit" class="exit-btn hide-desktop"><img src="img/exit.svg" alt="exit menu"></li>
+                        <li><a class="member" href="https://droombwpt.netlify.com/login">Member Login</a></li>
+                        <li><a class="signal" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <section>
+                <h1>SWIPE <br>RIGHT <br><span>PROFESSIONALLY</span></h1>
+                <img src="img/Droom_swipe.png" alt="Droom Swipe!" class="hand-swipe">
+        </section>
+    </div>
+
+    <div class="white-container">
+        <div class="container">
+            <ul>
+                <li class="iphone">
+                    <div>
+                            <h2>Swipe Your Way To <br>Your Next Career</h2>
+                            <p>On DROOM, you're able to look through jobs just like Tinder! Swipe right if you LOVE the job, swipe left if you don't. It's that simple!</p>
+                    </div>
+                        <img src="img/iphone2.png" alt="iOS Plant Profile">
+                </li>
+                <li class="android">
+                    <div>
+                            <h2>Top Rated Employers<br>a Fingertip Away</h2>
+                            <p>DROOM has job opportunities from top tier companies. To connect with the new generation of workforce, they know they are going to be on DROOM. Join today and find young, hungry talent looking to make an impact immediately.</p>
+                    </div>
+                            <img src="img/Android2.png" alt="Android Plant Profile">
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="white-container2">
+            <div class="container">
+                <div class="great-app">
+                        <h2>Droom is a great app</h2>
+                        <p class="show-desktop hide-mobile">Don't take our word for it, check out what these top companies have to say.</p>
+                </div>
+                <ul class="show-desktop hide-mobile">
+                    <li>
+                        <figure>
+                            <div class="circle"></div>
+                            <h3>Hiring Manager - AMAZON</h3>
+                            <p>I found my latest software dev using DROOM. I highly recommend it.</p>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <div class="circle"></div>
+                            <h3>Engineering Manager - FACEBOOK</h3>
+                            <p>Our new core of engineers all came from DROOM. Thanks!</p>
+                        </figure>
+                    </li>
+                </ul>
+                <a href="https://droombwpt.netlify.com/" class="cta">Sign Up Now</a>
+            </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                    <p class="copyright">Copyright © 2019</p>
+                    <ul class="droom-links">
+                        <li>
+                                <a href="#">DROOM App</a>
+                                <span>|</span>
+                                <a href="#">www.droom.com</a>
+                                <span>|</span>
+                                <a href="#">All Rights Reserved.</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#">Terms of Use</a>
+                            <span>|</span>
+                            <a href="#">Privacy Policy</a>
+                            <span>|</span>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+
+<!-- Javascript -->
+
+    <script>
+
+        let menu = document.getElementById('menu');
+        let nav = document.getElementById('nav');
+        let exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,715 @@
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+$colors: (
+    primary: #327A77,
+    primary-light: #4BAFA9,
+    primary-dark: #17242A,
+    accent: #DEF2F1,
+    off-white: #FEFFFF
+);
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    background-color: color(primary-light);
+}
+
+p {
+    font-size: .9em;
+    line-height: 1.6em;
+    color: color(primary-light);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 80px;
+    height: 15px;
+    border: 1px white solid;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding: 10px 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.menu {
+    width: 25px;
+    margin-top: 50%;
+}
+
+section {
+    display: flex;
+    padding: 20px 0 60px 0;
+}
+
+.contact-section {
+    padding: 50px 0 50px 0;
+
+    h1 {
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+    }    
+
+}
+
+.meet-team {
+    border: 1px solid color(primary-light);
+    border-radius: 20px;
+    margin: 20px 0;
+    background-color: color(accent);
+    text-align: left;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h3 {
+        text-align: center;
+    }
+
+    a {
+        border-radius: 50%;
+    }
+
+    a:hover {
+        box-shadow: 0 0 11px color(primary-dark);
+    }
+
+    .github-logo {
+        height: 50px;
+        width: auto;
+        float: right;
+    }
+}
+
+
+
+h1 {
+    font-size: 2.5em;
+    text-align: left;
+    position: absolute;
+    color: color(off-white);
+}
+
+.hand-swipe {
+    width: 120px;
+    height: auto;
+    z-index: 2;
+    margin: 20px 0 0 190px;
+    position: relative;
+}
+
+span {
+    color: black;
+}
+
+.white-container {
+    background-color: color(off-white);
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+
+
+    .white-container::after {
+        content: "";
+        background-color: red;
+        position: absolute;
+        border-bottom: 1px solid black;
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 20px;
+        display: block;
+    }    
+
+    img {
+        width: 140px;
+    }
+
+    ul {
+        width: 70%;
+        margin: 0 auto;
+        align-items: center;
+
+        p {
+            width: 220px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.white-container2 {
+    background-color: color(off-white);
+    padding-bottom: 60px;
+}
+
+.great-app {
+    padding-bottom: 30px;
+}
+
+.cta {
+    background-color: color(primary-dark);
+    border: 1px solid black;
+    padding: 1.1em 4em;
+    text-decoration: none;
+    color: color(off-white);
+    border-radius: 50px;
+}
+
+.cta:hover {
+    box-shadow: 0 0 11px rgb(33, 33, 33,);
+}
+
+footer {
+    background-color: color(accent);
+}
+
+.copyright {
+    color: black;
+    font-weight: bold;
+    font-size: .85em
+}
+
+
+.footer-container li a {
+    color: black;
+    text-decoration: none;
+}
+
+.droom-links {
+    font-size: .85em;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.footer-links {
+    color: black;
+    font-weight: bold;
+    font-size: .85em;
+    padding-bottom: 30px;
+}
+
+// Styling Mobile Nav Element
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background-color: rgb(36,41,44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(49, 55, 59);
+}
+
+nav ul li a:hover {
+    background-color: rgb(65, 73, 78);
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+
+    img {
+        width: 15px;
+        cursor: pointer;
+    }
+}
+
+
+
+@media only screen and (min-width: 650px) {
+
+    .meet-team {
+        height: 250px;
+        width: 130px;
+        margin: 20px 10px;
+        text-align: center;
+        padding: 0 20px;
+        display: inline-block;
+        
+        
+    
+        .github-logo {
+            margin-right: 40px;
+            padding-top: 10px;
+        }
+
+
+    }
+
+    section {
+        padding: 30px 0 90px 0;
+    }
+    
+    h1 {
+        font-size: 3.5em;
+        text-align: left;
+        position: absolute;
+        color: color(off-white);
+        margin-left: 50px;
+    }
+
+    .hand-swipe {
+        width: 200px;
+        height: auto;
+        z-index: 2;
+        margin: 0px 0 0 350px;
+        position: relative;
+    }
+
+    // White container under header
+
+    .white-container ul {
+        width: 80%;
+        padding-top: 40px;
+    }
+
+    .white-container li{
+        align-items: center;
+        justify-items: center;
+
+        p {
+            text-align: left;
+        }
+    }
+
+    .iphone {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 40px;
+
+        img {
+            padding: 0 3em;
+        }
+    }
+
+    .android {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2.5em;
+
+        img {
+            padding: 0 2em;
+        }
+    }
+
+    .white-container2  {
+
+        p {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        ul {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 50px;
+        }
+
+        figure {
+        border: 1px solid color(primary-light);
+        border-radius: 30px;
+        padding: 40px 0;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 875px) {
+
+    .meet-team {
+        margin: 20px 40px;
+    }
+
+    .logo {
+        margin-left: 50px;
+    }
+
+    section {
+        padding: 10px 0 10px 0;
+    }
+    
+    h1 {
+        font-size: 4em;
+        text-align: left;
+        position: absolute;
+        color: color(off-white);
+        margin-left: 50px;
+    }
+
+    .hand-swipe {
+        width: 220px;
+        height: auto;
+        z-index: 2;
+        margin: 90px 0 0 550px;
+        position: relative;
+    }
+
+    //White container under header
+
+    .iphone {
+        margin-right: 7.5em;
+    }
+
+    .android {
+        margin-left: 8.5em;
+    }
+
+    .white-container2  {
+
+        p {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        ul {
+             margin: 0 90px 20px;
+            }
+    }
+
+    .cta {
+        padding: 1.1em 4.5em;
+        font-size: 1.3em;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .meet-team {
+        height: 300px;
+        width: 150px;
+        margin: 20px 10px;
+        padding: 0 30px;
+    
+        .github-logo {
+            margin-right: 50px;
+        }
+    }
+
+    .container {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    nav{
+        padding-right:50px;
+    }
+
+     h1 {
+        font-size: 4.5em;
+    }
+
+    .hand-swipe {
+        width: 320px;
+        margin: 40px 0 0 620px;
+        animation: move 0.75s infinite alternate;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateX(-60px);
+        }
+        100% {
+            transform: translateX(20px);
+        }
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .white-container {
+        padding-top: 30px;
+
+        h2 {
+        text-align: left;
+        }
+
+        img {
+            width: 200px;
+        }
+    
+        .iphone {
+            margin-right: 1em;
+
+            p {
+            padding-right: 50px;
+
+            }
+
+        li {
+            padding-bottom: 70px;
+            }
+        }   
+
+        .android {
+            margin-bottom: 50px;
+            margin-top: 50px;
+            margin-left: 6em;
+
+            p {
+                padding-right: 100px;
+            }            
+        }    
+    }
+
+    .white-container2  {
+
+        ul {
+             margin: 0px 0px 60px;
+             padding: 0 40px;
+
+             h2 {
+                padding: 0 10px;
+             }
+
+             p {
+                 width: 100%;
+             }
+        }
+    }
+
+    .cta {
+        padding: 1.1em 5.5em;
+        font-size: 1.3em;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .show-desktop {
+        display: block;
+    }
+
+    .show-desktop-nav {
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    nav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: none;
+        display: flex;
+        padding-top: 0;
+
+        li {
+            float: left;
+            margin-left: 50px;
+
+            a {
+                background-color: inherit;
+                text-align: right;
+            }
+
+            // a:hover {
+            //     background-color: inherit;
+            // }
+
+            .member {
+                border: 1px solid color(off-white);
+                border-radius: 20px;
+                background-color: color(off-white);
+                color: color(primary);
+                text-align: center;
+                padding: 10px 10px;
+            }
+
+            .member:hover {
+                border: 1px solid color(primary-dark);
+                background-color: color(off-white);
+                box-shadow: 0 0 11px rgb(33, 33, 33,);
+            }
+    
+            .signal {
+                border: 1px solid black;
+                border-radius: 20px;
+                background-color: color(primary-dark);
+                color: color(off-white);
+                text-align: center;
+                padding: 10px 10px;
+            }
+
+            .signal:hover {
+                border: 1px solid color(primary-dark);
+                background-color: darken(color(primary-dark), 10%);
+                box-shadow: 0 0 11px rgb(33, 33, 33,);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .meet-team {
+        height: 355px;
+        width: 180px;
+        margin: 20px 40px;
+        padding: 0 30px;
+
+        h3 {
+            font-size: 1.4em;
+            padding-top: 20px;
+        }
+    
+        .github-logo {
+            margin-right: 50px;
+            height: 75px;
+            padding-top: 20px;
+        }
+    }
+
+    .container {
+        width: 75%;
+    }
+
+    nav{
+        padding-right:70px;
+        padding-top: 10px;
+    }
+
+    .hand-swipe {
+        width: 320px;
+        margin: 40px 0 0 820px;
+        animation: move 0.75s infinite alternate;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateX(-80px);
+        }
+        100% {
+            transform: translateX(60px);
+        }
+    }
+
+    .white-container {
+
+        .container {
+            width: 100%;
+            
+
+            p {
+                width: 100%;
+                font-size: 1.5em;
+            }
+        }
+
+        img {
+            width: 250px;
+            margin: 0 120px;
+        }
+    
+        .iphone {
+            margin-right: 9em;
+            margin-left: 8em;
+        }   
+
+        .android {
+            margin-left: 17em;
+            margin-right: 3em;
+        }    
+    }
+
+
+
+    .white-container2  {
+
+        margin: 0px 0px 0px 0;
+        padding: 20px 0px 100px 0px;
+        box-sizing: border-box;
+
+        ul {
+            margin: 0px 50px 90px;
+            padding: 0px 60px;
+        }
+
+        .cta {
+            padding: 1.1em 6.5em;
+            font-size: 1.7em;
+        }
+    }
+}
+
+@media only screen and (min-width: 1750px) {
+
+    .meet-team {
+        width: 200px;
+        margin: 20px 60px;
+    
+        .github-logo {
+            margin-right: 60px;
+        }
+    }
+
+    .white-container2  {
+
+        margin: 0px 0px 0px 0;
+        padding: 20px 0px 100px 0px;
+        box-sizing: border-box;
+
+        ul {
+            margin: 0px 150px 90px;
+            padding: 0px 100px;
+        }
+    }
+
+    .white-container{
+    .iphone {
+        margin-right: 15em;
+        margin-left: 5em;
+    }   
+
+    .android {
+        margin-left: 15em;
+        margin-right: 11em;
+    }    
+}
+
+}
+
